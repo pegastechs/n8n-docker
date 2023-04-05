@@ -53,7 +53,7 @@ services:
       - traefik.http.middlewares.n8n.headers.STSPreload=true
       - traefik.http.routers.n8n.middlewares=n8n@docker
     environment:
-      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_ACTIVE=fasle
       - N8N_BASIC_AUTH_USER
       - N8N_BASIC_AUTH_PASSWORD
       - N8N_HOST=${SUB_DOMAIN}.${DOMAIN_NAME}
